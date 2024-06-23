@@ -2,10 +2,15 @@ body {
     font-family: Arial, sans-serif;
     background-color: #f4f4f9;
     display: flex;
-    justify-content: center;
+    flex-direction: column;
     align-items: center;
     height: 100vh;
     margin: 0;
+}
+
+.header {
+    text-align: center;
+    margin-top: 20px;
 }
 
 .chat-container {
@@ -14,6 +19,7 @@ body {
     border-radius: 10px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     overflow: hidden;
+    margin-top: 20px;
 }
 
 .chat-box {
@@ -48,4 +54,3 @@ button {
 button:hover {
     background-color: #0056b3;
 }
-
