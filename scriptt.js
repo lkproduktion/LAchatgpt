@@ -1,42 +1,22 @@
-async function sendMessage() {
+function sendMessage() {
     const userInput = document.getElementById('user-input').value;
     if (!userInput) return;
 
     const chatBox = document.getElementById('chat-box');
+    
+    // Benutzer Nachricht anzeigen
     const userMessage = document.createElement('div');
     userMessage.textContent = `Du: ${userInput}`;
     chatBox.appendChild(userMessage);
 
+    // Benutzer Eingabe zurücksetzen
     document.getElementById('user-input').value = '';
 
-    try {
-        const response = await fetch('https://api.openai.com/v1/engines/davinci-codex/completions', {
-            method: 'POST',
-            headers: {
-                'Content-Type': 'application/json',
-                'Authorization': 'Bearer YOUR_OPENAI_API_KEY'
-            },
-            body: JSON.stringify({
-                prompt: userInput,
-                max_tokens: 150
-            })
-        });
+    // ChatGPT Nachricht anzeigen
+    const botMessage = document.createElement('div');
+    botMessage.textContent = `ChatGPT: Wir sind bald erreichbar.`;
+    chatBox.appendChild(botMessage);
 
-        if (response.ok) {
-            const data = await response.json();
-            const botMessage = document.createElement('div');
-            botMessage.textContent = `ChatGPT: ${data.choices[0].text.trim()}`;
-            chatBox.appendChild(botMessage);
-        } else {
-            const errorMessage = document.createElement('div');
-            errorMessage.textContent = 'Fehler beim Abrufen der Antwort von ChatGPT.';
-            chatBox.appendChild(errorMessage);
-        }
-    } catch (error) {
-        const errorMessage = document.createElement('div');
-        errorMessage.textContent = 'Fehler beim Abrufen der Antwort von ChatGPT.';
-        chatBox.appendChild(errorMessage);
-    }
-
-    chatBox.scrollTop = chatBox.scrollHeight; // Scrollen Sie nach unten, um die neue Nachricht anzuzeigen
+    // Scrollen Sie nach unten, um die neue Nachricht anzuzeigen
+    chatBox.scrollTop = chatBox.scrollHeight;
 }
