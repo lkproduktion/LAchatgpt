@@ -14,7 +14,7 @@ function sendMessage() {
 
     // ChatGPT Nachricht anzeigen
     const botMessage = document.createElement('div');
-    botMessage.textContent = `ChatGPT: geh nach hause.`;
+    botMessage.textContent = `ChatGPT:  hallo rondo.`;
     chatBox.appendChild(botMessage);
 
     // Scrollen Sie nach unten, um die neue Nachricht anzuzeigen
