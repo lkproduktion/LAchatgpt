@@ -1,4 +1,4 @@
-async function sendMessage() {
+async function sendMessage(hallo) {
     const userInput = document.getElementById('user-input').value;
     if (!userInput) return;
 
