@@ -23,11 +23,11 @@ function sendMessage() {
 
 function generateResponse(userInput) {
     const responses = {
-        "hallo": "Hallo! Wie kann ich dir helfen?",
-        "wie geht's": "Mir geht es gut, danke! Und dir?",
-        "was machst du": "Ich antworte auf deine Fragen!",
-        "wer bist du": "Ich bin ein Chatbot, der dir hilft.",
-        "tschüss": "Auf Wiedersehen! Bis zum nächsten Mal."
+        "Hallo": "Hallo! Wie kann ich dir helfen?",
+        "Wie geht's": "Mir geht es gut, danke! Und dir?",
+        "Was machst du": "Ich antworte auf deine Fragen!",
+        "Wer bist du": "Ich bin ein Chatbot, der dir hilft.",
+        "Tschüss": "Auf Wiedersehen! Bis zum nächsten Mal."
     };
     
     // Standardantwort, falls keine passende Antwort gefunden wird
