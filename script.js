@@ -30,7 +30,10 @@ function generateResponse(userInput) {
         "wie geht's": "Mir geht es gut, danke! Und dir?",
         "was machst du": "Ich antworte auf deine Fragen!",
         "wer bist du": "Ich bin ein Chatbot, der dir hilft.",
-        "tschüss": "Auf Wiedersehen! Bis zum nächsten Mal."
+        "tschüss": "Auf Wiedersehen! Bis zum nächsten Mal.",
+        "wie spät ist es": `Es ist ${new Date().toLocaleTimeString()}.`,
+        "welches datum haben wir": `Heute ist der ${new Date().toLocaleDateString()}.`,
+        "wie heißt du": "Ich bin ein Chatbot ohne Namen, aber du kannst mich Freund nennen."
     };
     
     // Überprüfen auf vordefinierte Antworten
@@ -62,6 +65,17 @@ function generateResponse(userInput) {
                 result = "Unbekannter Operator";
         }
         return `Das Ergebnis von ${num1} ${operator} ${num2} ist ${result}.`;
+    }
+    
+    // Einfache Fragen beantworten
+    if (lowerInput.includes('wetter')) {
+        return "Ich kann das Wetter leider nicht überprüfen, aber es scheint heute schön zu sein!";
+    }
+    if (lowerInput.includes('hauptstadt von deutschland')) {
+        return "Die Hauptstadt von Deutschland ist Berlin.";
+    }
+    if (lowerInput.includes('wie viel ist')) {
+        return "Für komplexe Berechnungen bin ich leider nicht ausgestattet, aber einfache Mathematik kann ich machen.";
     }
     
     // Standardantwort, falls keine passende Antwort gefunden wird
