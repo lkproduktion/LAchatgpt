@@ -31,6 +31,6 @@ function generateResponse(userInput) {
     };
     
     // Standardantwort, falls keine passende Antwort gefunden wird
-    return responses[userInput.toLowerCase()] || "Ich liebe dich kvakva.";
+    return responses[userInput.toLowerCase()] || "Der zeit wird bearbeitet .";
 }
 
