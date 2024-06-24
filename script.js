@@ -14,10 +14,23 @@ function sendMessage() {
 
     // ChatGPT Nachricht anzeigen
     const botMessage = document.createElement('div');
-    botMessage.textContent = `ChatGPT: hallo rondo.`;
+    botMessage.textContent = `ChatGPT: ${generateResponse(userInput)}`;
     chatBox.appendChild(botMessage);
 
     // Scrollen Sie nach unten, um die neue Nachricht anzuzeigen
     chatBox.scrollTop = chatBox.scrollHeight;
+}
+
+function generateResponse(userInput) {
+    const responses = {
+        "hallo": "Hallo! Wie kann ich dir helfen?",
+        "wie geht's": "Mir geht es gut, danke! Und dir?",
+        "was machst du": "Ich antworte auf deine Fragen!",
+        "wer bist du": "Ich bin ein Chatbot, der dir hilft.",
+        "tschüss": "Auf Wiedersehen! Bis zum nächsten Mal."
+    };
+    
+    // Standardantwort, falls keine passende Antwort gefunden wird
+    return responses[userInput.toLowerCase()] || "Ich liebe dich kvakva.";
 }
 
