@@ -33,7 +33,7 @@ function generateResponse(userInput) {
         "tschüss": "Auf Wiedersehen! Bis zum nächsten Mal.",
         "wie spät ist es": `Es ist ${new Date().toLocaleTimeString()}.`,
         "welches datum haben wir": `Heute ist der ${new Date().toLocaleDateString()}.`,
-        "wie heißt du": "Ich bin LA Chatbot ohne, aber du kannst mich Freund nennen."
+        "wie heißt du": "Ich bin LA Chatbot , aber du kannst mich Freund nennen."
     };
     
     // Überprüfen auf vordefinierte Antworten
