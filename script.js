@@ -202,7 +202,6 @@ const capitals = {
     "kyrgyzstan": "Bishkek",
     "laos": "Vientiane",
     "latvia": "Riga",
-    "lebanon": "Beirut",
-     "les
+    "lebanon": "Beirut".
 
 
