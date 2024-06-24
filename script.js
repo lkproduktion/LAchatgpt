@@ -31,6 +31,6 @@ function generateResponse(userInput) {
     };
     
     // Standardantwort, falls keine passende Antwort gefunden wird
-    return responses[userInput.toLowerCase()] || "Der zeit wird bearbeitet.";
+    return responses[userInput.toLowerCase()] || "Kann deine Frage zurzeit nicht beantworten, bin aber dabei, mich zu verbessern.";
 }
 
