@@ -203,5 +203,3 @@ const capitals = {
     "laos": "Vientiane",
     "latvia": "Riga",
     "lebanon": "Beirut".
-
-
