@@ -23,7 +23,7 @@
 
 function generateResponse(userInput) {
     const responses = {
-        "Hallo": "Hallo! Wie kann ich dir helfen?",
+        "hallo": "Hallo! Wie kann ich dir helfen?",
         "wie geht's": "Mir geht es gut, danke! Und dir?",
         "was machst du": "Ich antworte auf deine Fragen!",
         "wer bist du": "Ich bin ein Chatbot, der dir hilft.",
