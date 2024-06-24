@@ -34,6 +34,7 @@ function generateResponse(userInput) {
         "wie spät ist es": `Es ist ${new Date().toLocaleTimeString()}.`,
         "welches datum haben wir": `Heute ist der ${new Date().toLocaleDateString()}.`,
         "wie heißt du": "Ich bin LA Chatbot , aber du kannst mich Freund nennen."
+        "Kennst du alex ": "ja alex ist ein hund."
     };
     
     // Überprüfen auf vordefinierte Antworten
