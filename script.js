@@ -1,4 +1,3 @@
-
     const userInput = document.getElementById('user-input').value;
     if (!userInput) return;
 
@@ -31,6 +30,7 @@ function generateResponse(userInput) {
     };
     
     // Standardantwort, falls keine passende Antwort gefunden wird
+
     return responses[userInput.toLowerCase()] || "Kann deine Frage zurzeit nicht beantworten, bin aber dabei, mich zu verbessern.";
 }
 
