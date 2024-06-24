@@ -1,3 +1,4 @@
+function sendMessage() {
     const userInput = document.getElementById('user-input').value;
     if (!userInput) return;
 
@@ -23,14 +24,12 @@
 function generateResponse(userInput) {
     const responses = {
         "Hallo": "Hallo! Wie kann ich dir helfen?",
-        "Wie geht's": "Mir geht es gut, danke! Und dir?",
-        "Was machst du": "Ich antworte auf deine Fragen!",
-        "Wer bist du": "Ich bin ein Chatbot, der dir hilft.",
-        "Tschüss": "Auf Wiedersehen! Bis zum nächsten Mal."
+        "wie geht's": "Mir geht es gut, danke! Und dir?",
+        "was machst du": "Ich antworte auf deine Fragen!",
+        "wer bist du": "Ich bin ein Chatbot, der dir hilft.",
+        "tschüss": "Auf Wiedersehen! Bis zum nächsten Mal."
     };
     
     // Standardantwort, falls keine passende Antwort gefunden wird
-
     return responses[userInput.toLowerCase()] || "Kann deine Frage zurzeit nicht beantworten, bin aber dabei, mich zu verbessern.";
 }
-
