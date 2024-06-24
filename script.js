@@ -41,7 +41,6 @@ function generateResponse(userInput) {
         "wie spät ist es": `Es ist ${getTimeInGerman()}.`,
         "welches datum haben wir": `Heute ist der ${getGermanDate()}.`,
         "wie heißt du": "Ich bin ChatGPT, dein persönlicher Assistent.",
-        "kennst du alex": "Ja, Alex ist ein Hund. Ein sehr intelligenter und treuer Begleiter!"
     };
     
     // Überprüfen auf vordefinierte Antworten
